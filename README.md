@@ -30,3 +30,4 @@ alignment and coherence over time — measured by reflective checkpoints called
 
 ---
 © 2025 Brian Warren. Licensed under the Apache License, Version 2.0.
+l
