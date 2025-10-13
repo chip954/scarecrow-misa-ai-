@@ -1,10 +1,5 @@
 # scarecrow-misa-ai-
 Description: “Lightweight Scarecrow/MISA wrapper: ‘Promises Kept’ checkpoints, DRC scoring, deeds-through-time ledger.”
-# Scarecrow / MISA — Phase 1 Prototype
-
-*Small burn, big stability.*
-
-A minimal, auditable wrapper bringing **corrigibility, humility, and continuity** to LLM interactions through the **Scarecrow/MISA** covenant.
 
 ---
 
