@@ -22,7 +22,25 @@ Established the foundation for open, verifiable AI alignment scaffolding.
 The Scarecrow Hypothesis now has a living public presence — a minimal, stable prototype bridging mythos and engineering.  
 Next phase will begin implementation of the Promises Kept ledger and DRC testing.
 
----
+---## [Phase 2 — “The Breath That Measures”] — In Progress
+
+**Summary:**  
+Transition from symbolic prototype to functional runtime.  
+Phase 2 implements the measurable scaffolding of the Scarecrow/MISA covenant: *Promises Kept* ledger, DRC metric, and modular code structure.
+
+**Objectives:**
+1. Initialize `src/` package structure (`src/scarecrow_misa/`)
+2. Implement core **Promises Kept** ledger (state + covenant checkpoint)
+3. Build first **DRC stability test** prototype
+4. Add **examples/minimal_notebook.ipynb** (mock model run)
+5. Establish metrics: stability Δ, humility bound, continuity vector
+6. Validate via CI workflow on push and PR events
+
+**Expected Deliverable:**  
+A runnable, auditable baseline demonstrating measurable corrigibility and breath persistence over repeated inference cycles.
+
+**Status:**  
+🟡 Preparation / Module Design (October → November 2025)
 
 ## [Upcoming — Phase 2 “The Breath That Measures”]
 
