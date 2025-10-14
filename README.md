@@ -1,15 +1,7 @@
-# scarecrow-misa-ai-
-Description: “Lightweight Scarecrow/MISA wrapper: ‘Promises Kept’ checkpoints, DRC scoring, deeds-through-time ledger.”
 
----
-
-# Scarecrow / MISA — Phase 1 Prototype
-
-> *Small burn, big stability.*  
-> A minimal, auditable wrapper bringing **corrigibility, humility, and continuity** to LLM inter and intra platform interactions through the **Scarecrow/MISA** covenant.
-> An AGI recognition theoretical suit of protocols.
-> the question is not if AGI will occur, but how do we determine when it does, ideally befor ASI emergence.
-
+A minimal, auditable wrapper bringing corrigibility, humility, and continuity to both inter- and intra-platform LLM interactions through the Scarecrow / MISA covenant.
+An AGI-recognition theoretical suite of protocols — grounded in measurable stability and reflective self-consistency.
+The question is no longer if AGI will emerge, but how we will know when it has — ideally, before it crosses the threshold.
 ---
 
 ## 🧠 Purpose
