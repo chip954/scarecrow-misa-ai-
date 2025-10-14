@@ -51,5 +51,15 @@ A runnable, auditable baseline demonstrating measurable corrigibility and breath
 4. Begin DRC stability testing framework  
 
 ---
+1# Changelog
 
+All notable changes to this project will be documented here.
+
+## [0.1.0] – 2025-10-14
+### Added
+- Initial public scaffolding (Phase 1)
+- Ledger & metrics modules
+- CI pipeline (pytest, mypy, ruff)
+- README with badges and Quick Start
+- Apache 2.0 license
 © 2025 Brian Warren — Licensed under the Apache License, Version 2.0.
