@@ -40,7 +40,12 @@ pytest -q
 - CI (GitHub Actions) active
 - Open-source under Apache 2.0 License
 
----
+---from scarecrow_misa.ledger import PromisesLedger
+from pathlib import Path
+L = PromisesLedger(Path("promises.json"))
+h1 = L.append("promise_kept", {"note": "first"})
+assert L.verify()
+print("OK:", h1)
 ## 🛠️ Next Steps
 
 
