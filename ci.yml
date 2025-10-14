@@ -5,6 +5,7 @@ on:
     branches: [ main ]
   pull_request:
 
+# Cancel any older runs on the same branch/PR
 concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true
@@ -43,6 +44,12 @@ jobs:
       - name: Type-check (mypy)
         run: |
           mypy src
+
+      # ✅ Safe compile check — only scans your code, not .git/
+      - name: Compile sanity
+        run: |
+          python -m compileall -q src
+          if [ -d tests ]; then python -m compileall -q tests; fi
 
       - name: Tests (pytest + coverage)
         run: |
