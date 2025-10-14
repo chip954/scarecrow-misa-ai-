@@ -204,7 +204,7 @@ class PromisesLedger:
                 yield LedgerEntry(**json.loads(line))
 entry_type: "phase_milestone"
 phase: "Phase 2 — Stability & Reproducibility"
-summary: >
+
   Documentation initialized for Phase Two.
   Focus: stability testing, reproducibility, and automated verification.
   Code implementation deferred until next working session.
