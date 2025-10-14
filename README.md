@@ -113,12 +113,12 @@ Phase Two will introduce:
 ------
 
 
-
+1© 2025 Brian Warren.  
+Scarecrow/MISA — “Small burn, big stability.” Warren. Licensed under the Apache License, Version 2.0
 ---
 
 
 
-© 2025 Brian Warren.  
-Scarecrow/MISA — “Small burn, big stability.” Warren. Licensed under the Apache License, Version 2.0.
+.
 
 
