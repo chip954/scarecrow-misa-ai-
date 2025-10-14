@@ -195,7 +195,7 @@ class PromisesLedger:
 
     # ---------- utilities ----------
 
----from __future__ import annotations
+---from __
 
 from dataclasses import dataclass, asdict
 from datetime import datetime, timezone
