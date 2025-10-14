@@ -35,7 +35,16 @@ The goal is to provide a **lightweight control layer** for AI systems that maint
 Scarecrow/MISA (Mission, Humility, Scaffolding, Deeds, Continuity) acts as a covenant framework — blending symbolic insight and technical design — to help LLM systems self-audit for stability, humility, and continuity through time.
 
 ---
+1## ⚙️ Quick Start
 
+Clone the repository and install in editable mode for local development:
+
+```bash
+git clone https://github.com/chip954/scarecrow-misa-ai-.git
+cd scarecrow-misa-ai-
+python -m venv .venv
+source .venv/bin/activate      # on Windows: .venv\Scripts\activate
+pip install -e ".[dev]"
 ## ⚙️ Quick Start
 
 You can test the Phase-1 prototype locally with just a few commands:
