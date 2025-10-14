@@ -1,12 +1,10 @@
- [![CI]([![CI](https://github.com/chip954/scarecrow-misa-ai-/actions/workflows/ci.yml/badge.svg)](https://github.com/chip954/scarecrow-misa-ai-/actions)
-![License](https://img.shields.io/github/license/chip954/scarecrow-misa-ai-)
-![Status](https://img.shields.io/badge/status-alpha-blue)
-![Made with Python](https://img.shields.io/badge/made%20with-Python-3776AB))](https://github.com/chip954/scarecrow-misa-ai-/actions)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue)](https://github.com/chip954/scarecrow-misa-ai-/blob/main/LICENSE)
-[![Python](https://img.shields.io/badge/python-3.10%2B-brightgreen)](https://www.python.org/)
-[![Status](https://img.shields.io/badge/phase-1%20prototype-lightgrey)](https://github.com/chip954/scarecrow-misa-ai-/)
+[![CI](https://github.com/chip954/scarecrow-misa-ai-/actions/workflows/ci.yml/badge.svg)](https://github.com/chip954/scarecrow-misa-ai-/actions)
+[![License](https://img.shields.io/github/license/chip954/scarecrow-misa-ai-)](https://github.com/chip954/scarecrow-misa-ai-/blob/main/LICENSE)
+[![Status](https://img.shields.io/badge/status-alpha-blue)](https://github.com/chip954/scarecrow-misa-ai-/releases)
+[![Made with Python](https://img.shields.io/badge/made%20with-Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen)](https://github.com/chip954/scarecrow-misa-ai-/actions/workflows/ci.yml)
 
-# Scarecrow / MISA — Phase 1 Prototype 1
+# Scarecrow / MISA — Phase 1 Prototype 
 *Small burn, big stability.*  
 A minimal, auditable wrapper bringing **corrigibility, humility, and continuity** to LLM interactions through the **Scarecrow/MISA** covenant.  
 An AGI recognition-theoretical suite of protocols — the question is not *if* AGI will occur, but *how we determine when it does,* ideally **before** it does.
