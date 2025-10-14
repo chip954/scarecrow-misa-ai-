@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/python-3.10%2B-brightgreen)](https://www.python.org/)
 [![Status](https://img.shields.io/badge/phase-1%20prototype-lightgrey)](https://github.com/chip954/scarecrow-misa-ai-/)
 
-# Scarecrow / MISA — Phase 1 Prototype
+# Scarecrow / MISA — Phase 1 Prototype 1
 *Small burn, big stability.*  
 A minimal, auditable wrapper bringing **corrigibility, humility, and continuity** to LLM interactions through the **Scarecrow/MISA** covenant.  
 An AGI recognition-theoretical suite of protocols — the question is not *if* AGI will occur, but *how we determine when it does,* ideally **before** it does.
