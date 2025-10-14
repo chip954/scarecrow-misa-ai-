@@ -1,4 +1,4 @@
-
+ 
 A minimal, auditable wrapper bringing corrigibility, humility, and continuity to both inter- and intra-platform LLM interactions through the Scarecrow / MISA covenant.
 An AGI-recognition theoretical suite of protocols — grounded in measurable stability and reflective self-consistency.
 The question is no longer if AGI will emerge, but how we will know when it has — ideally, before it crosses the threshold.
