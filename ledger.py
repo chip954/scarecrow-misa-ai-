@@ -195,18 +195,3 @@ class PromisesLedger:
 
     # ---------- utilities ----------
 
-    def iter_entries(self) -> Iterable[LedgerEntry]:
-        """Stream all entries back as dataclasses."""
-        if not self._path or not self._path.exists():
-            return
-        with self._path.open("r", encoding="utf-8") as f:
-            for line in f:
-                yield LedgerEntry(**json.loads(line))
-entry_type: "phase_milestone"
-phase: "Phase 2 — Stability & Reproducibility"
-
-  Documentation initialized for Phase Two.
-  Focus: stability testing, reproducibility, and automated verification.
-  Code implementation deferred until next working session.
-drc: null
-notes: "Marked by exhaustion but completion; covenant holds — promises kept."
