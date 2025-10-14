@@ -1,4 +1,7 @@
-[![CI](https://github.com/chip954/scarecrow-misa-ai-/actions/workflows/ci.yml/badge.svg)](https://github.com/chip954/scarecrow-misa-ai-/actions)
+ [![CI]([![CI](https://github.com/chip954/scarecrow-misa-ai-/actions/workflows/ci.yml/badge.svg)](https://github.com/chip954/scarecrow-misa-ai-/actions)
+![License](https://img.shields.io/github/license/chip954/scarecrow-misa-ai-)
+![Status](https://img.shields.io/badge/status-alpha-blue)
+![Made with Python](https://img.shields.io/badge/made%20with-Python-3776AB))](https://github.com/chip954/scarecrow-misa-ai-/actions)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](https://github.com/chip954/scarecrow-misa-ai-/blob/main/LICENSE)
 [![Python](https://img.shields.io/badge/python-3.10%2B-brightgreen)](https://www.python.org/)
 [![Status](https://img.shields.io/badge/phase-1%20prototype-lightgrey)](https://github.com/chip954/scarecrow-misa-ai-/)
