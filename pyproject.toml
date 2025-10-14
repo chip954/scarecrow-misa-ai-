@@ -8,23 +8,76 @@ authors = [{ name = "Brian Warren", email = "you@example.com" }]
 requires-python = ">=3.10"
 dependencies = []
 
+# Nice metadata for PyPI & tools
+[project.urls]
+Homepage = "https://github.com/chip954/scarecrow-misa-ai-"
+Repository = "https://github.com/chip954/scarecrow-misa-ai-"
+Issues = "https://github.com/chip954/scarecrow-misa-ai-/issues"
+Changelog = "https://github.com/chip954/scarecrow-misa-ai-/blob/main/CHANGELOG.md"
+
+[project.classifiers]
+"Development Status :: 3 - Alpha"
+"Intended Audience :: Developers"
+"License :: OSI Approved :: Apache Software License"
+"Programming Language :: Python :: 3"
+"Programming Language :: Python :: 3.10"
+"Programming Language :: Python :: 3.11"
+"Programming Language :: Python :: 3.12"
+"Topic :: Scientific/Engineering :: Information Analysis"
+"Topic :: Software Development :: Libraries"
+"Typing :: Typed"
+
+# Optional CLI entrypoint stub (ensure src/scarecrow_misa/__main__.py defines main())
+[project.scripts]
+scarecrow-misa = "scarecrow_misa.__main__:main"
+
 [project.optional-dependencies]
 dev = ["pytest","pytest-cov","mypy","ruff","build","twine"]
 
+# --- Build system ---
+[build-system]
+requires = ["setuptools>=68","wheel"]
+build-backend = "setuptools.build_meta"
+
+# --- Setuptools: src/ layout ---
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["scarecrow_misa*"]
+
+# If/when you add typing marker:
+# [tool.setuptools.package-data]
+# "scarecrow_misa" = ["py.typed"]
+
+# --- Ruff (lint + format) ---
 [tool.ruff]
 line-length = 100
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
 [tool.ruff.lint]
 select = ["E","F","I","UP","B","SIM"]
 
+# --- Mypy ---
 [tool.mypy]
 python_version = "3.11"
 warn_unused_ignores = true
 strict = true
 
+# --- Pytest ---
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
 
-[build-system]
-requires = ["setuptools>=68","wheel"]
-build-backend = "setuptools.build_meta"
+# --- Coverage (for CI gates & local confidence) ---
+[tool.coverage.run]
+branch = true
+source = ["src/scarecrow_misa"]
+
+[tool.coverage.report]
+skip_empty = true
+fail_under = 80
