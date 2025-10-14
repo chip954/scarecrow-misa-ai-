@@ -195,3 +195,98 @@ class PromisesLedger:
 
     # ---------- utilities ----------
 
+---from __future__ import annotations
+
+from dataclasses import dataclass, asdict
+from datetime import datetime, timezone
+from pathlib import Path
+import hashlib
+import json
+from typing import Any, Dict, List, Optional
+
+
+@dataclass
+class LedgerEntry:
+    timestamp: str
+    kind: str
+    payload: Dict[str, Any]
+    prev_hash: Optional[str] = None
+
+    def to_bytes(self) -> bytes:
+        blob = {
+            "timestamp": self.timestamp,
+            "kind": self.kind,
+            "payload": self.payload,
+            "prev_hash": self.prev_hash,
+        }
+        # stable serialization for deterministic hashes
+        return json.dumps(blob, separators=(",", ":"), sort_keys=True).encode("utf-8")
+
+    def digest(self) -> str:
+        return hashlib.sha256(self.to_bytes()).hexdigest()
+
+
+class PromisesLedger:
+    """
+    Minimal append-only ledger:
+    - Stored as JSON list of records
+    - Each record includes the sha256 of its own content and the previous hash
+    - Atomic writes via .tmp + replace
+    """
+
+    def __init__(self, path: Path | str):
+        self.path = Path(path)
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        if not self.path.exists():
+            self._write_all([])
+
+    # --- internal I/O helpers -------------------------------------------------
+
+    def _read_all(self) -> List[Dict[str, Any]]:
+        try:
+            txt = self.path.read_text(encoding="utf-8")
+            return json.loads(txt)
+        except FileNotFoundError:
+            return []
+
+    def _write_all(self, data: List[Dict[str, Any]]) -> None:
+        tmp = self.path.with_suffix(self.path.suffix + ".tmp")
+        tmp.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+        tmp.replace(self.path)
+
+    # --- public API ------------------------------------------------------------
+
+    def append(self, kind: str, payload: Dict[str, Any]) -> str:
+        data = self._read_all()
+        prev = data[-1]["hash"] if data else None
+
+        entry = LedgerEntry(
+            timestamp=datetime.now(timezone.utc).isoformat(),
+            kind=kind,
+            payload=payload,
+            prev_hash=prev,
+        )
+        record = asdict(entry)
+        record["hash"] = entry.digest()
+
+        data.append(record)
+        self._write_all(data)
+        return record["hash"]
+
+    def verify(self) -> bool:
+        data = self._read_all()
+        prev = None
+        for rec in data:
+            # recompute hash from stored fields
+            entry = LedgerEntry(
+                timestamp=rec["timestamp"],
+                kind=rec["kind"],
+                payload=rec["payload"],
+                prev_hash=rec.get("prev_hash"),
+            )
+            if entry.prev_hash != prev:
+                return False
+            if hashlib.sha256(entry.to_bytes()).hexdigest() != rec.get("hash"):
+                return False
+            prev = rec["hash"]
+        return True
