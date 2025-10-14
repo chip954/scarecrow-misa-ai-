@@ -37,7 +37,7 @@ pip install -e .
 python examples/minimal_example.py
 # 4. Run the minimal example
 python examples/minimal_example.py
----
+
 ## ⚙️ Current Status
 
 - Phase 1 Prototype
@@ -47,10 +47,45 @@ python examples/minimal_example.py
 ---
 ## 🛠️ Next Steps
 
+
 - Add `src/` module scaffolding
 - Implement Promises Kept ledger
 - Add reproducible example notebook
 
 ---
-© 2025 Brian Warren. Licensed under the Apache License, Version 2.0.
-a ledger/folder will apprar with an append+only json file.
+© 2025 ---
+
+## 🌾 Phase Two — Stability & Reproducibility
+
+**Status:** initializing
+
+The next milestone expands Scarecrow/MISA from a minimal proof-of-concept into a reproducible testing framework.  
+Phase Two will introduce:
+
+- **Stability Testing Loop:** run multiple sessions and measure DRC variance.  
+- **Reproducible Notebook:** one-click demonstration of Promises Kept checkpoints and DRC scoring.  
+- **Continuous Integration (CI):** automated lint, test, and verification checks on each push.  
+- **Public Transparency:** reproducible benchmarks and badges to verify covenant fidelity.
+
+**Success criteria**
+
+| Metric | Target |
+|:--|:--|
+| DRC mean | ≥ 0.85 |
+| DRC standard deviation | ≤ 0.07 |
+| Chain verification | 100 % pass |
+| CI build | all green |
+
+------
+
+
+
+---
+
+© 2025 Brian Warren.  
+Scarecrow/MISA — “Small burn, big stability.”
+
+© 2025 Brian Warren.  
+Scarecrow/MISA — “Small burn, big stability.” Warren. Licensed under the Apache License, Version 2.0.
+
+
