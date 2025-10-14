@@ -1,4 +1,12 @@
-![CI](https://github.com/<chip954>/<repo>/actions/workflows/ci.yml/badge.svg)
+[![CI](https://github.com/chip954/scarecrow-misa-ai-/actions/workflows/ci.yml/badge.svg)](https://github.com/chip954/scarecrow-misa-ai-/actions)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue)](https://github.com/chip954/scarecrow-misa-ai-/blob/main/LICENSE)
+[![Python](https://img.shields.io/badge/python-3.10%2B-brightgreen)](https://www.python.org/)
+[![Status](https://img.shields.io/badge/phase-1%20prototype-lightgrey)](https://github.com/chip954/scarecrow-misa-ai-/)
+
+# Scarecrow / MISA — Phase 1 Prototype
+*Small burn, big stability.*  
+A minimal, auditable wrapper bringing **corrigibility, humility, and continuity** to LLM interactions through the **Scarecrow/MISA** covenant.  
+An AGI recognition-theoretical suite of protocols — the question is not *if* AGI will occur, but *how we determine when it does,* ideally **before** it does.
 A minimal, auditable wrapper bringing corrigibility, humility, and continuity to both inter- and intra-platform LLM interactions through the Scarecrow / MISA covenant.
 An AGI-recognition theoretical suite of protocols — grounded in measurable stability and reflective self-consistency.
 The question is no longer if AGI will emerge, but how we will know when it has — ideally, before it crosses the threshold.
