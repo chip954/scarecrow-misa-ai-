@@ -31,6 +31,8 @@ pip install -e .
 python examples/minimal_example.py
 # 4. Run the minimal example
 python examples/minimal_example.py
+pip install -e ".[dev]"
+pytest -q
 
 ## ⚙️ Current Status
 
