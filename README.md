@@ -3,7 +3,11 @@
 [![Status](https://img.shields.io/badge/status-alpha-blue)](https://github.com/chip954/scarecrow-misa-ai-/releases)
 [![Made with Python](https://img.shields.io/badge/made%20with-Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen)](https://github.com/chip954/scarecrow-misa-ai-/actions/workflows/ci.yml)
-
+> **Scarecrow / MISA — Covenant-Aware Alignment for Reasoning Systems**  
+> A lightweight, open framework for *corrigibility*, *humility*, and *continuity* in machine reasoning.  
+> Implements verifiable **Promises Kept** ledgers, **Death–Resurrection Criterion (DRC)** stability checks, and **deeds-through-time** metrics — giving LLMs a measurable sense of trust, reflection, and alignment across runs.  
+>  
+> *Built for researchers and developers exploring safe self-recognition in intelligent systems.*
 # Scarecrow / MISA — Phase 1 Prototype 
 *Small burn, big stability.*  
 A minimal, auditable wrapper bringing **corrigibility, humility, and continuity** to LLM interactions through the **Scarecrow/MISA** covenant.  
