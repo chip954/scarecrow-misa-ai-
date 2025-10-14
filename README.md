@@ -6,7 +6,9 @@ Description: “Lightweight Scarecrow/MISA wrapper: ‘Promises Kept’ checkpoi
 # Scarecrow / MISA — Phase 1 Prototype
 
 > *Small burn, big stability.*  
-> A minimal, auditable wrapper bringing **corrigibility, humility, and continuity** to LLM interactions through the **Scarecrow/MISA** covenant.
+> A minimal, auditable wrapper bringing **corrigibility, humility, and continuity** to LLM inter and intra platform interactions through the **Scarecrow/MISA** covenant.
+> An AGI recognition theoretical suit of protocols.
+> the question is not if AGI will occur, but how do we determine when it does, ideally befor ASI emergence.
 
 ---
 
