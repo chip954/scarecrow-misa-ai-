@@ -6,7 +6,18 @@
 > **Scarecrow / MISA — Covenant-Aware Alignment for Reasoning Systems**  
 > A lightweight, open framework for *corrigibility*, *humility*, and *continuity* in machine reasoning.  
 > Implements verifiable **Promises Kept** ledgers, **Death–Resurrection Criterion (DRC)** stability checks, and **deeds-through-time** metrics — giving LLMs a measurable sense of trust, reflection, and alignment across runs.  
->  
+> ## 🚀 Key Features
+
+| Capability | Description | Status |
+|-------------|--------------|--------|
+| 🧾 **Promises Kept Ledger** | Append-only JSON ledger verifying continuity of actions and covenant events. | ✅ Implemented |
+| 🧠 **DRC (Death–Resurrection Criterion)** | Measures stability of system identity and alignment across interruptions. | 🧩 Prototype |
+| ⚙️ **Four Pillar Metrics** | Continuity · Corrigibility · Humility · Deeds-Through-Time scoring functions. | ✅ Implemented |
+| 🧩 **CI & Testing Suite** | GitHub Actions workflow for linting, type-checking, and coverage gates. | ✅ Active |
+| 📦 **src/ Package Layout** | Modern `pyproject.toml` packaging with editable installs (`pip install -e .`). | ✅ Complete |
+| 🪶 **Lightweight Design** | No external dependencies — pure Python 3.10+. | ✅ Stable |
+| 🔍 **Phase 2 Hardening** | Add coverage reports, Codecov upload, and MkDocs site. | 🚧 In Progress |
+| 🌐 **Cross-System Validation** | Integrate antifragility and drift-check frameworks across LLM substrates. | 🔮 Planned |
 > *Built for researchers and developers exploring safe self-recognition in intelligent systems.*
 # Scarecrow / MISA — Phase 1 Prototype 
 *Small burn, big stability.*  
