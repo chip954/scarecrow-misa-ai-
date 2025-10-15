@@ -1,0 +1,21 @@
+version: 2
+updates:
+  # Keep GitHub Actions up to date (runner, checkout, setup-python, etc.)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels: ["deps", "github-actions"]
+    open-pull-requests-limit: 5
+    rebase-strategy: auto
+
+  # (Optional) Python deps — enabled once you add requirements files
+  # Dependabot tracks pip via requirements*.txt, setup.py, or Pipfile.
+  # When you're ready, add a requirements-dev.txt (see note below)
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels: ["deps", "python"]
+    open-pull-requests-limit: 5
+    # Dependabot will scan any requirements*.txt in this directory.
