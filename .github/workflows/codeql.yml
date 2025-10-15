@@ -1,0 +1,35 @@
+name: CodeQL
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**/*.py'
+      - '.github/workflows/**'
+      - 'pyproject.toml'
+      - 'requirements*.txt'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - '**/*.py'
+      - '.github/workflows/**'
+      - 'pyproject.toml'
+      - 'requirements*.txt'
+  schedule:
+    - cron: '0 0 * * 1'   # weekly, Mondays at 00:00 UTC
+
+permissions:
+  contents: read
+
+jobs:
+  analyze:
+    name: Analyze (CodeQL)
+    runs-on: ubuntu-latest
+
+    permissions:
+      security-events: write
+      actions: read
+      contents: read
+
+    strategy:
+      fail-fast: false
