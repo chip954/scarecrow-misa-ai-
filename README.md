@@ -32,3 +32,4 @@ git clone https://github.com/chip954/scarecrow-misa-ai-.git
 cd scarecrow-misa-ai-
 pip install -e ".[dev]"
 pytest -q
+l
