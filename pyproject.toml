@@ -15,7 +15,7 @@ Repository = "https://github.com/chip954/scarecrow-misa-ai-"
 Issues = "https://github.com/chip954/scarecrow-misa-ai-/issues"
 Changelog = "https://github.com/chip954/scarecrow-misa-ai-/blob/main/CHANGELOG.md"
 
-[project.classifiers]
+[[project.classifiers]
 "Development Status :: 3 - Alpha"
 "Intended Audience :: Developers"
 "License :: OSI Approved :: Apache Software License"
@@ -25,7 +25,9 @@ Changelog = "https://github.com/chip954/scarecrow-misa-ai-/blob/main/CHANGELOG.m
 "Programming Language :: Python :: 3.12"
 "Topic :: Scientific/Engineering :: Information Analysis"
 "Topic :: Software Development :: Libraries"
-"Typing :: Typed"
+"Typing :: Typed"]
+"Development Status :: 3 - Alpha"
+
 
 # Optional CLI entrypoint stub (ensure src/scarecrow_misa/__main__.py defines main())
 [project.scripts]
