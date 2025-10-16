@@ -184,10 +184,6 @@ Copyright © 2025 Brian Warren.
 Licensed under the Apache License, Version 2.0 — see LICENSE.
 
 
----
-
-If you want, paste this in now. After that, I can draft CONTRIBUTING.md and a tiny examples/bridge_demo.py that logs a checkpoint + DRC to show the ledger working.
-
  open framework for covenant-aware AI stability — bridging mythos and machine through measurable humility and continuity.*
 
 ---
