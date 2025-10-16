@@ -1,10 +1,11 @@
-from scarecrow_misa.ledger import PromisesLedger
-from pathlib import Path
-import tempfile, json
+# tests/test_ledger_min.py
+from scarecrow_misa import PromisesLedger
 
-def test_chain_integrity(tmp_path: Path):
-    p = tmp_path / "ledger.json"
-    L = PromisesLedger(p)
-    L.append("event_a", {"x": 1})
-    L.append("event_b", {"y": 2})
-    assert L.verify()
+
+def test_ledger_roundtrip(tmp_path):
+    L = PromisesLedger(base_dir=tmp_path)
+    sid = L.start_session()
+    L.checkpoint("init")
+    L.record_drc({"continuity": 0.9}, composite=0.9)
+    ok, bad = L.verify_chain()
+    assert ok and bad is None
