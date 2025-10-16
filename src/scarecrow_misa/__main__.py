@@ -4,3 +4,5 @@ def main() -> None:
 def main() -> None:
     """CLI entry point."""
     print("Scarecrow/MISA — Promises Kept. (CLI stub running)")
+def main() -> None:
+    print("Scarecrow/MISA — Promises Kept. (CLI stub running)")
