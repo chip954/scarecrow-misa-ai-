@@ -16,3 +16,8 @@ from . import metrics
 from .ledger import PromisesLedger, LedgerEntry  # or Ledger/Event if those are your actual names
 
 __all__ = ["PromisesLedger", "LedgerEntry", "metrics"]
+# Public API exports
+from .ledger import PromisesLedger, LedgerEntry
+from . import metrics  # if you have metrics.py and want it visible as a submodule
+
+__all__ = ["PromisesLedger", "LedgerEntry", "metrics"]
