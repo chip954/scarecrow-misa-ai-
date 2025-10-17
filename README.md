@@ -208,4 +208,5 @@ git clone https://github.com/chip954/scarecrow-misa-ai-.git
 cd scarecrow-misa-ai-
 pip install -e ".[dev]"
 pytest -q
-l
+## 🧪 Experiments
+- Hot-path triage (2025-10-17): results and write-ups → experiments/2025-10-17-hotpath-triage/
