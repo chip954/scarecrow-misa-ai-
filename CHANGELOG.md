@@ -63,3 +63,4 @@ All notable changes to this project will be documented here.
 - README with badges and Quick Start
 - Apache 2.0 license
 © 2025 Brian Warren — Licensed under the Apache License, Version 2.0.
+Added: Initial cross-model hot-path triage experiments (Grok, Gemini, GPT-5); compact-mode demo; sample DRC ledger.
