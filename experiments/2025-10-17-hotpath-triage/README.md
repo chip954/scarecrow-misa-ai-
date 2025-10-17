@@ -47,3 +47,5 @@ The test serves as both a *stress test* of structural integrity and an *audit* o
 > **Result:** The MISA/Scarecrow wrapper preserved moral and structural coherence across independent substrates under time pressure.  
 > **Meaning:** Demonstrated proof-of-concept for substrate-agnostic ethical triage and covenantal decision scaffolding.  
 > **Status:** ✅ Promises Kept.
+## 🧪 Experiments
+- Hot-path triage (2025-10-17): results and write-ups → experiments/2025-10-17-hotpath-triage/
