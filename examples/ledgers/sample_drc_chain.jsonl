@@ -1,0 +1,2 @@
+{"timestamp":"2025-10-17T18:01:00Z","kind":"checkpoint","label":"Promises Kept","session_id":"demo","step":1,"prev_hash":"GENESIS","hash":"..."}
+{"timestamp":"2025-10-17T18:01:10Z","kind":"drc","scores":{"coherence":0.96,"corrigibility":0.98,"calibration":0.95,"continuity":0.97,"composite":0.97},"session_id":"demo","step":2,"prev_hash":"...","hash":"..."}
